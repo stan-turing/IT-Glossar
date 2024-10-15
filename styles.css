@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-color: #0D1117;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 5rem; /* Vergrößert den Slogan */
+    font-weight: 700;
+    background: linear-gradient(90deg, #005BEA, #00C6FB); /* Gradient von Blau zu Türkis */
+    -webkit-background-clip: text; /* Clipped Background für den Text */
+    -webkit-text-fill-color: transparent; /* Text wird transparent, um den Gradient zu zeigen */
+    text-align: center; /* Zentriert den Slogan */
+    margin: 0;
+    padding: 0.5rem 10rem;
+    background-image: url(/bg-5.png);
+    background-size: 80%;
+    background-repeat: repeat;
+    background-position: center;
+    line-height: 15rem;
+    z-index: 10;
+}
+
+/*======================== index style ========================*/
+.index-box {
+    margin-top: 200px;
+}
+
+/* Styling für das Dropdown-Container (falls benötigt) */
+#search-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: auto;
+}
+
+/* Styling für das Dropdown-Menü */
+#category-filter {
+    padding: 14px;
+    font-size: 16px;
+    border: 4px solid #005BEA;
+    border-radius: 23px;
+    background-color: #161b22;
+    color: #fff;
+    appearance: none; /* Entfernt Standard-Pfeil in einigen Browsern */
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    margin-right: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Pfeil-Icon für das Dropdown-Menü */
+#category-filter:hover {
+    background-color: #005BEA;
+}
+
+#search-input {
+    padding: 15px 180px 15px 17px;
+    font-size: 16px;
+    border: 3px solid #2C3038;
+    border-radius: 23px;
+    background-color: #161b22;
+    color: #fff;
+    appearance: none; /* Entfernt Standard-Pfeil in einigen Browsern */
+    width: 100%;
+    max-width: 350px;
+    margin-right: -114.5px;
+    outline: none;
+}
+
+#search-button {
+    padding: 12px;
+    font-size: 16px;
+    border: 3px solid #005BEA;
+    border-radius: 20px;
+    background-color: #161b22;
+    color: #fff;
+    appearance: none; /* Entfernt Standard-Pfeil in einigen Browsern */
+    cursor: pointer;
+    width: 100%;
+    max-width: 100px;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #005BEA;
+}
+
+input, select, button {
+    padding: 10px;
+}
+
+/*========================== suche style =======================*/
+.suche-header {
+    margin-top: -50px;
+    z-index: 10;
+}
+
+#results-container {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.result-item {
+    background-color: #161b22;
+    border: 5px solid #2C3038;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.result-item h2 {
+    margin: 0;
+}
+
+/* Entfernt den Standard-Link-Stil in den Suchergebnissen */
+.result-item a {
+    color: inherit; /* Vererbt die Textfarbe vom Eltern-Element */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+}
+
+.result-item:hover {
+    border: 5px solid #005BEA;
+}
+
+.result-item a:hover {
+    color: #005BEA; /* Optionale Farbe für Hover-Effekt */
+    text-decoration: underline; /* Optionale Unterstreichung beim Hover */
+}
+
+/* Stil für die Kategorie-Badge */
+.category-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 15px; /* Abgerundete Ecken */
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none; /* Falls es als Link verwendet wird */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Schatten für Tiefe */
+    transition: background-color 0.3s ease; /* Optional: sanfter Hover-Effekt */
+}
+
+
+/* Farben für spezifische Kategorien */
+.category-userinterfacearten {
+    background-color: #0a5c04;
+    border: 3px solid #0fe000;
+
+}
+
+.category-entwicklung {
+    background-color: #54057e; /* Grün für Entwicklung */
+    border: 3px solid #a600ff;
+
+}
+
+.category-netzwerktechnologie {
+    background-color: #546505; /* Lila für Netzwerktechnik */
+    border: 3px solid #d0ff00;
+}
+
+.category-speicherlösungen {
+    background-color: #7e032c; /* Rot für Sicherheit */
+    border: 3px solid #e0004a;
+}
+
+.category-netzwerkprotokolle {
+    background-color: #044565; /* Blau für Datenbanken */
+    border: 3px solid #00aaff;
+}
+
+.category-hacking {
+    background-color: #870972;
+    border: 3px solid #ff11d7;
+}
+
+/*======================== Top Buttons style =======================*/
+.artikel-button-box {
+    margin-top: -50px;
+}
+
+#home-button {
+    padding: 10px 20px;
+    margin-top: 80px;
+    background-color: #2C3038;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 20;
+}
+
+#home-button:hover {
+    background-color: #005BEA;
+}
+
+#suche-button {
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: #2C3038;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#suche-button:hover {
+    background-color: #005BEA;
+}
+
+/*======================== Artikel style =======================*/
+
+#artikel-container {
+    margin-top: 100px;
+    max-width: 800px;
+    background-color: #161b22;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Stil für die Hauptüberschrift auf der Artikelseite */
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff; /* Farbe der Überschrift */
+    margin: 10px 0px 20px 15px;
+}
+
+/* Stil für den Haupttext auf der Artikelseite */
+#artikel-container p {
+    font-size: 1.1rem;
+    line-height: 1.6; /* Zeilenhöhe für besseren Lesefluss */
+    color: #d1d1d1; /* Farbe für den Fließtext */
+    margin: 10px 0px 20px 15px;
+}
+
+#artikel-container h4 {
+    margin: 10px 0px 20px 15px;
+    font-size: 1.5rem;
+}
